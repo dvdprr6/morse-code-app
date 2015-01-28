@@ -1,6 +1,6 @@
 .settings/
 .project
 .classpath
-/target
+target/
 log4j.log
 translation.txt
