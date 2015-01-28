@@ -1,7 +1,5 @@
 package com.mycompany.app;
 
-import org.apache.log4j.Logger;
-
 public class MorseNode{
 	private char letter;
 	private MorseNode left;
