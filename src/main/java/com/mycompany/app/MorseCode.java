@@ -67,6 +67,7 @@ public class MorseCode{
 	}
 	
 	private void splitAndTrimEncoder(String file_string){
+		logger.info("Constructing Morse Binary Tree...");
 		for (String word : file_string.split("\n")){
 			addToMorseTree(word.substring(2).trim(), word.charAt(0));
 		}
@@ -75,7 +76,7 @@ public class MorseCode{
 	private void addToMorseTree(String morse_code, char letter_value){
 		MorseNode current = this.root;
 		String morse_signal = null;
-
+		
 		for (int i = 0; i < morse_code.length(); i++){
 			morse_signal = morse_code.substring(i , i + 1);
 			if (morse_signal.equals(".")){
