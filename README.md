@@ -15,14 +15,17 @@ The `MorseToWords` and the `WordsToMorse` classes translate morse code to words 
 ## Classes
 
 1.  MorseNode.java
+    
     The MorseNode class is where the node for the binary tree is defined. This class holds information, such as, the character that is stored in the node and pointers to the right and left of the next node.
     
     Each new node is initialized as empty, meaning that no character is set and the right and left pointers point to null
     
 2.  MorseCode.java
+    
     This class is where the construction of the morse binary tree is done. It reads from a encoder text that maps the character with its morse code. During the construction of the binary tree, the alogrithm uses the dots and dashes to define which direction the new node should be placed. The dots tell the alogrithm that the next node is to the left, and the dashes to the right.
     
 3.  MorseToWords.java
+    
     This class translates morse code into words. This class inherits the `MorseCode` class to use the morse code binary tree. First it reads a text file with morse code, and the search algorithm uses the dots and dashes to traverse the morse code binary tree to find.
     
 4.  WordsToMorse.java
