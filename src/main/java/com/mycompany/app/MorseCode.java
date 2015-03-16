@@ -121,5 +121,4 @@ public class MorseCode{
 			logger.info(current.getLetter());
 		}
 	}
-	
 }
